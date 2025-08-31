@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather App</title>
+    <style>
+        body {
+        
+        background-image: url("static/ocean.jpg");
+        background-size: cover;
+        background-position: center;
+        color: rgb(0, 0, 0);
+        padding: 20px;
+        }
+    </style>
+        
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+
+        <h1>Weather App</h1>
+        <form method="POST">
+            <input type="text" name="city" placeholder="Enter city name" value="{{ city }}">
+            <button type="submit">Get Weather</button>
+        </form>
+
+        {% if weather_data %}
+        <div class="weather-info">
+            <h2>Weather in {{ city }}:</h2>
+            <p>🌡 Temperature: {{ weather_data.temp }}°C</p>
+            <p>Weather: {{ weather_data.description }}</p>
+            <p>Feels Like: {{ weather_data.feels_like }}°C</p>
+            <p>Humidity: {{ weather_data.humidity }}%</p>
+        </div>
+        {% elif error_message %}
+        <p class="error">{{ error_message }}</p>
+        {% endif %}
+    </div>
+</body>
+</html>
+
