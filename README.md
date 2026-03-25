@@ -1,4 +1,5 @@
 🌦️ Weather Expert App
+
 A professional, lightweight Weather Dashboard built with Python Flask and OpenWeather API. This project demonstrates core Software Engineering principles including API Integration, Caching, and Robust Error Handling.
 
 🚀 Key Features
@@ -20,6 +21,7 @@ Clean Architecture: Separated business logic (weather.py) from routing logic (ap
 
 
 🛠️ Tech Stack
+
 Backend: Python, Flask
 API: OpenWeatherMap API
 Environment Management: python-dotenv
