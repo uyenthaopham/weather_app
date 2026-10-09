@@ -22,7 +22,6 @@ Clean Architecture: Separated business logic (weather.py) from routing logic (ap
 <img width="1903" height="894" alt="image" src="https://github.com/user-attachments/assets/48dddfee-1c13-423d-9d37-02fffa9c3143" />
 
 
-🛠️ Tech Stack
 
 Backend: Python, Flask
 API: OpenWeatherMap API
