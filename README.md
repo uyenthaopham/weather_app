@@ -1,6 +1,6 @@
 🌦️ Weather Expert App
 
-A professional, lightweight Weather Web App built with Python Flask and OpenWeather API including API Integration, Caching, and Robust Error Handling.
+A lightweight Weather Web App built with Python Flask and OpenWeather API including API Integration, Caching, and Robust Error Handling.
 
 🚀 Key Features:
 
